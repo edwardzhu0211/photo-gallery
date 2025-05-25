@@ -25,7 +25,14 @@
   height: 100%; /* Make image fill the container height */
   object-fit: cover; /* Cover the container, crop if necessary */
   display: block; /* Remove extra space below image */
-  transition: transform 0.3s ease; /* For a subtle hover effect */
+  /* Updated for fade-in on scroll and hover */
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.3s ease; /* Combined transitions */
+}
+
+/* Class to trigger fade-in */
+.image-item img.is-visible {
+  opacity: 1;
 }
 
 .image-item:hover img {
