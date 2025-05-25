@@ -1,0 +1,32 @@
+.about-container {
+  padding: 20px;
+}
+
+.about-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.about-content {
+  max-width: 700px; /* Constrain width for readability */
+  margin: 0 auto; /* Center the content block */
+  line-height: 1.7; /* Improve text spacing */
+  font-size: 1.1em; /* Slightly larger font for content */
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+/* Optional: Style for a profile picture if you add one */
+/*
+.profile-pic {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%; // Makes it circular
+  margin: 30px auto;
+  border: 3px solid #eee;
+}
+*/ 

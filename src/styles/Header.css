@@ -1,0 +1,31 @@
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Pushes name to left, nav to right */
+  align-items: center;
+  padding: 25px 50px; /* Increased padding */
+  border-bottom: 1px solid #eee;
+}
+
+.site-title a {
+  font-size: 1.8em; /* Slightly smaller than previous h1 */
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 25px; /* Spacing between nav items */
+}
+
+.main-nav a {
+  text-transform: uppercase; /* Matches example style */
+  font-size: 0.9em;
+  font-weight: normal; /* Bolder text in example is often due to font choice */
+  letter-spacing: 0.5px;
+}
+
+.main-nav a:hover {
+  color: #777; /* Subtle hover effect */
+  text-decoration: none;
+} 
