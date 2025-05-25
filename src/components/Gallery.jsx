@@ -152,9 +152,9 @@ function Gallery() {
               {/* <p className="overlay-title">{image.title || `Image ${image.id}`}</p> */}
               <div className="overlay-metadata">
                 <p>Camera: {image.camera}</p>
-                <p>Lens: {image.focalLength}</p>
+                <p>Focal Length: {image.focalLength}</p>
                 <p>Aperture: {image.fStop}</p>
-                <p>Shutter: {image.shutterSpeed}</p>
+                <p>Shutter Speed: {image.shutterSpeed}</p>
               </div>
             </div>
             {/* You can add a caption or overlay here */}
