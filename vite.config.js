@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // base: '/photo-gallery/', // Removed base path
+  base: '/photo-gallery/', // Restore base path for GitHub Pages
 })
