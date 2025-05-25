@@ -5,19 +5,14 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 // Construct image paths using Vite's base URL environment variable
-const imageFiles = [
-  { id: 1, fileName: 'DSCF2100.JPG', title: 'Photography 1' },
-  { id: 2, fileName: 'DSCF1847.JPG', title: 'Photography 2' },
-  { id: 3, fileName: 'DSCF2283.jpg', title: 'Photography 3' },
-  { id: 4, fileName: 'DSCF2205.jpg', title: 'Photography 4' },
-  { id: 5, fileName: 'DSCF2270.jpg', title: 'Photography 5' },
+const actualImages = [
+  { id: 1, src: '/images/DSCF2100.JPG', title: 'Photography 1' },
+  { id: 2, src: '/images/DSCF1847.JPG', title: 'Photography 2' },
+  { id: 3, src: '/images/DSCF2283.jpg', title: 'Photography 3' },
+  { id: 4, src: '/images/DSCF2205.jpg', title: 'Photography 4' },
+  { id: 5, src: '/images/DSCF2270.jpg', title: 'Photography 5' },
   // Add more images here if you have them
 ];
-
-const actualImages = imageFiles.map(img => ({
-  ...img,
-  src: `${import.meta.env.BASE_URL}images/${img.fileName}`
-}));
 
 // Prepare slides for the lightbox (it expects an array of objects with a `src` property)
 const slides = actualImages.map(image => ({ src: image.src, title: image.title }));
