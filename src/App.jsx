@@ -5,9 +5,12 @@ import Gallery from './components/Gallery';
 import About from './components/About';
 import './styles/App.css';
 
+// Get the base URL from Vite's environment variables
+const basename = import.meta.env.BASE_URL;
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Header />
         <main>
