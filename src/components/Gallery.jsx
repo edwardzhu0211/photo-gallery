@@ -51,17 +51,6 @@ function Gallery() {
         slides={slides}
         index={currentIndex}
         closeOnBackdropClick={true} // Ensures backdrop click triggers close
-        // You can customize plugin behavior, e.g., zoom settings
-        // zoom={{ 
-        //   maxZoomPixelRatio: 2,
-        //   doubleTapDelay: 300,
-        //   doubleClickDelay: 500,
-        //   doubleClickMaxStops: 2,
-        //   keyboardMoveDistance: 50,
-        //   wheelZoomDistanceFactor: 100,
-        //   pinchZoomDistanceFactor: 100,
-        //   scrollToZoom: false 
-        // }}
       />
     </div>
   );
